@@ -12,8 +12,8 @@ const Greetings = () => {
       <div className="w-100 d-flex flex-column align-items-center p-5">
         <Hello />
         <People />
-        <Image />
         <About />
+        <Image />
       </div>
     </div>
   );

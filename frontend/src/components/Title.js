@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Title = () => {
-  return <div className="text-danger">React i18n Example</div>;
+  const { t, i18n } = useTranslation();
+  return <div className="text-danger">{t("header:Reacti18nextTitle")}</div>;
 };
 
 export default Title;

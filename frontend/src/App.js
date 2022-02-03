@@ -1,4 +1,5 @@
 import React, { Suspense } from "react";
+
 import "./App.css";
 import "./i18n";
 import Header from "./components/Header";
