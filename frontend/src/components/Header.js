@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React from "react";
 import LanguageSelector from "./LanguageSelector";
 import Title from "./Title";
 const Header = () => {

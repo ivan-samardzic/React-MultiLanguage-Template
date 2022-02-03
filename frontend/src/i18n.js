@@ -8,17 +8,16 @@ i18n
   .init({
     lng: "en",
     backend: {
-      /* translation file path */
       loadPath: "/assets/i18n/{{ns}}/{{lng}}.json",
     },
-    fallbackLng: "de",
+    fallbackLng: false,
     debug: false,
-    /* can have multiple namespace, in case you want to divide a huge translation into smaller pieces and load them on demand */
-    ns: ["translations", "header"],
-    defaultNS: "translations",
+    ns: ["general", "header"],
+    nsSeparator: ":",
+    defaultNS: "general",
     keySeparator: false,
     interpolation: {
-      escapeValue: false,
+      escapeValue: true,
       formatSeparator: ",",
     },
     react: {
