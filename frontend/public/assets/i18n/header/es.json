@@ -1,4 +1,5 @@
 {
   "Reacti18nextTitle": "React i18next Ejemplo",
-  "DynamicKey": "{{what}} is {{how}}"
+  "DynamicKey": "{{what}} es {{how}}",
+  "Best": "el mejor"
 }
