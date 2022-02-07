@@ -16,6 +16,7 @@ i18n
     nsSeparator: ":",
     defaultNS: "general",
     keySeparator: false,
+    useSuspense: true,
     interpolation: {
       escapeValue: true,
       formatSeparator: ",",
