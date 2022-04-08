@@ -16,8 +16,8 @@ const Title = () => {
         }}
       >
         <img
-          src={t("ArsFuturaImage")}
-          alt={`${t("ArsFuturaImage")}-alt`}
+          src={t("header:ArsFuturaImage")}
+          alt={`${t("header:ArsFuturaImage")}-alt`}
           style={{ width: "60px", height: "60px", alignContent: "center" }}
         />
         <div
@@ -29,8 +29,8 @@ const Title = () => {
       </div>
       <div className="d-flex flex-column align-items-center w-10 my-4">
         <img
-          src={t("I18NextImage")}
-          alt={`${t("I18NextImage")}-alt`}
+          src={t("header:I18NextImage")}
+          alt={`${t("header:I18NextImage")}-alt`}
           style={{ width: "60px", height: "60px", alignContent: "center" }}
         />
         <div
@@ -39,7 +39,7 @@ const Title = () => {
             width: "60px",
             fontSize: "12px",
             alignContent: "center",
-            marginLeft: "12px",
+            marginLeft: "20px",
           }}
         >
           i18next

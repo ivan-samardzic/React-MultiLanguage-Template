@@ -13,9 +13,9 @@ const Greetings = () => {
         </div>
         <div className="text-center">{t("People")}</div>
         <div className="text-danger">
-          {t("header:DynamicKey", {
+          {t("DynamicKey", {
             what: "Internationalization",
-            how: t("header:Best"),
+            how: t("Best", { ns: "general" }),
           })}
         </div>
       </div>
