@@ -1,17 +1,23 @@
 import React from "react";
-import Hello from "./Hello";
-import People from "./People";
-import Image from "./Image";
-import About from "./About";
+import { useTranslation } from "react-i18next";
 
 const Greetings = () => {
+  const { t } = useTranslation();
   return (
-    <div className="d-flex flex-row align-igtems-center w-100">
-      <div className="w-100 d-flex flex-column align-items-center p-5">
-        <Hello />
-        <People />
-        <About />
-        <Image />
+    <div className="d-flex flex-column align-items-center">
+      <div className="d-flex d-flex flex-column align-items-center p-5">
+        <div
+          style={{ textAlign: "center", fontSize: "58px", fontWeight: "700" }}
+        >
+          {t("Hello")}
+        </div>
+        <div className="text-center">{t("People")}</div>
+        <div className="text-danger">
+          {t("header:DynamicKey", {
+            what: "Internationalization",
+            how: t("header:Best"),
+          })}
+        </div>
       </div>
     </div>
   );

@@ -2,18 +2,49 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Title = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
-    <div>
-      {i18n.exists("header:DynamicKey") && (
-        <div className="text-danger">
-          {t("header:DynamicKey", {
-            what: "Ars Futura Web Team",
-            how: t("header:Best"),
-          })}
+    <div className="d-flex flex-row align-items-center">
+      <div
+        style={{
+          flexDirection: "column",
+          alignItems: "center",
+          width: "60px",
+          justifyContent: "center",
+          alignContent: "center",
+          margin: "0px 8px",
+        }}
+      >
+        <img
+          src={t("ArsFuturaImage")}
+          alt={`${t("ArsFuturaImage")}-alt`}
+          style={{ width: "60px", height: "60px", alignContent: "center" }}
+        />
+        <div
+          className="text-danger"
+          style={{ width: "60px", fontSize: "12px", alignContent: "center" }}
+        >
+          Ars Futura
         </div>
-      )}
-      <div className="text-danger">{t("header:Reacti18nextTitle")}</div>
+      </div>
+      <div className="d-flex flex-column align-items-center w-10 my-4">
+        <img
+          src={t("I18NextImage")}
+          alt={`${t("I18NextImage")}-alt`}
+          style={{ width: "60px", height: "60px", alignContent: "center" }}
+        />
+        <div
+          className="text-success"
+          style={{
+            width: "60px",
+            fontSize: "12px",
+            alignContent: "center",
+            marginLeft: "12px",
+          }}
+        >
+          i18next
+        </div>
+      </div>
     </div>
   );
 };

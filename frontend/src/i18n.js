@@ -8,7 +8,7 @@ i18n
   .init({
     lng: "en",
     backend: {
-      loadPath: "/assets/i18n/{{ns}}/{{lng}}.json",
+      loadPath: "/locales/{{ns}}/{{lng}}.json",
     },
     fallbackLng: false,
     debug: false,
