@@ -1,31 +1,43 @@
-import React from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+import Dropdown from "./Dropdown";
 
 const LanguageSelector = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const [value, setValue] = useState("en");
+  const [label, setLabel] = useState(t("English", { ns: "header" }));
+
+  const dropdownOptions = useMemo(
+    () => [
+      { label: t("English", { ns: "header" }), value: "en" },
+      { label: t("German", { ns: "header" }), value: "de" },
+      { label: t("Spanish", { ns: "header" }), value: "es" },
+    ],
+    [t]
+  );
+  const data = useMemo(() => [...dropdownOptions], [dropdownOptions]);
 
   const changeLanguage = (event) => {
     i18n.changeLanguage(event.target.value);
+    setValue(event.target.value);
   };
+
+  useEffect(() => {
+    setLabel(
+      dropdownOptions.map(
+        (dropdownOption, index) =>
+          value === dropdownOption.value && dropdownOption.label
+      )
+    );
+  }, [value, t, dropdownOptions]);
+
   return (
-    <div
+    <Dropdown
+      label={label}
+      options={data}
+      value={value}
       onChange={changeLanguage}
-      className="d-flex align-items-center justify-content-around"
-      style={{ width: "200px" }}
-    >
-      <div className="d-flex align-items-center justify-content-center">
-        <input type="radio" value="en" name="language" defaultChecked />
-        <p className="m-3">English</p>
-      </div>
-      <div className="d-flex align-items-center justify-content-center">
-        <input type="radio" value="de" name="language" />
-        <p className="m-3">German</p>
-      </div>
-      <div className="d-flex align-items-center justify-content-center">
-        <input type="radio" value="es" name="language" />
-        <p className="m-3">Spanish</p>
-      </div>
-    </div>
+    />
   );
 };
 
