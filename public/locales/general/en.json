@@ -1,7 +1,7 @@
 {
   "Hello": "Hello People",
-  "People": "Ars Futura is the team with 47 people living their dreams and making cool software",
+  "People": "Ars Futura is the team with 47 people living their dreams and making cool software. We are an award-winning design and development agency, working from Zagreb, Croatia.🏆What we do best is mobile and web development, product management, design, and business consulting.",
   "DynamicKey": "{{what}} is {{how}}",
-  "Best": "awesome",
-  "About": "We are an award-winning design and development agency, working from Zagreb, Croatia.🏆What we do best is mobile and web development, product management, design, and business consulting. But, we can probably try our hand at some cake eating too, if it's needed for the success of the project.Our clients hail from a variety of industries – IoT, healthcare, gaming, communications, and business solutions.Always going the extra mile for a project is second nature to us. So is loving sunny days, good coffee, bad jokes, and a good use of an emoji."
+  "Best": "awesome.",
+  "About": "But, we can probably try our hand at some cake eating too, if it's needed for the success of the project.Our clients hail from a variety of industries – IoT, healthcare, gaming, communications, and business solutions.Always going the extra mile for a project is second nature to us. So is loving sunny days, good coffee, bad jokes, and a good use of an emoji."
 }

@@ -1,9 +1,9 @@
 import React, { Suspense } from "react";
-
+import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import "./i18n";
 import Header from "./components/Header";
-import Greetings from "./components/Greetings";
+import HomeScreen from "./screens/HomeScreen";
 
 const App = () => {
   return (
@@ -16,16 +16,9 @@ const App = () => {
         }
       >
         <Header />
-        <div
-          style={{
-            position: "absolute",
-            top: "50%",
-            transform: "translate(0, -50%)",
-            padding: "10px",
-          }}
-        >
-          <Greetings />
-        </div>
+        <Routes>
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
       </Suspense>
     </div>
   );
