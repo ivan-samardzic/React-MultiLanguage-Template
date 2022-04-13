@@ -1,8 +1,7 @@
 ### Multilanguage React Template
 
-This is a template created to show the implementation of internationalization within an existing project. The Github repository mostly relies on already existing
-examples written in the documentation of the mentioned packages and in the examples of other fellow developers. However, attention was paid to the simplest
-possible presentation of the implementation through easy-to-understand representations, cool images and translations.
+This is a template created to show the implementation of internationalization within an existing project. It mostly relies on already existing examples written
+in the documentation of the mentioned packages. Here you can find easy-to-understand representations, cool images and translations.
 
 ## Getting Started
 
